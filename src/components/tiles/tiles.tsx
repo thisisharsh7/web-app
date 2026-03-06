@@ -43,7 +43,6 @@ export const TilesControl = () => {
     const handleStyleData = () => {
       setStyleVersion((v) => v + 1);
       setVisibilityOverrides({});
-      setExpandedGroups(new Set());
     };
 
     map.on('styledata', handleStyleData);
